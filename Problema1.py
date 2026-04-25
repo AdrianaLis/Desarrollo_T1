@@ -62,7 +62,7 @@ def ResultadoTorneo():
     print(f" {equipo2.nombre} G: {equipo2.partidosganados} | P: {equipo2.partidosperdidos}")
    
 
-# 3. Menú Principal
+
 while True:
     print("\n--- SISTEMA DE GESTIÓN DE VOLEY ---")
     print("1. Iniciar Torneo (Registrar y Jugar)")
@@ -80,7 +80,7 @@ while True:
                 print(f"\n--- ENFRENTAMIENTO #{i+1} ---")
                 JugarPartido()
             
-            # Al terminar todos los partidos, mostrar tabla final
+          
             ResultadoTorneo()
             
         elif opc == 2:
