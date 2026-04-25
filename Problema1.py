@@ -10,11 +10,11 @@ class Equipo:
     def __str__(self):
         return f"Equipo: {self.nombre}"
 
-# 1. Instancias Globales
+
 equipo1 = Equipo()
 equipo2 = Equipo()
 
-# 2. Funciones de Juego
+
 def Puntos():
     return random.randint(10, 28)
 
@@ -57,10 +57,9 @@ def JugarPartido():
             termino = RegistrarSet(2)
 
 def ResultadoTorneo():
-   
-    print(" RESUMEN DEL TORNEO")
-    print(f" {equipo1.nombre:.<20} G: {equipo1.partidosganados} | P: {equipo1.partidosperdidos}")
-    print(f" {equipo2.nombre:.<20} G: {equipo2.partidosganados} | P: {equipo2.partidosperdidos}")
+    print("\n--- RESUMEN DEL TORNEO ---")
+    print(f" {equipo1.nombre} G: {equipo1.partidosganados} | P: {equipo1.partidosperdidos}")
+    print(f" {equipo2.nombre} G: {equipo2.partidosganados} | P: {equipo2.partidosperdidos}")
    
 
 # 3. Menú Principal
@@ -85,7 +84,7 @@ while True:
             ResultadoTorneo()
             
         elif opc == 2:
-            print("Cerrando el sistema. ¡Adiós!")
+            print("Cerrando el sistema")
             break
         else:
             print("Opción no válida, intente de nuevo.")
