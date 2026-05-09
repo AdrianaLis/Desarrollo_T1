@@ -27,8 +27,6 @@ def mochila_voraz(cajas, capacidad):
 
             print(f"Soles obtenidos: {soles_totales:.2f}")
             break
-
-
 m = float(input("Ingrese el peso máximo de la mochila: "))
 cajas = [
     Caja("H", 3, 3),  
